@@ -1,0 +1,435 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width" initial-scale="1"><meta name="description" content="Nerve Regeneration"><title>Nerve Regeneration</title><link rel="stylesheet" href="/main.css"> <script src="https://kit.fontawesome.com/b00cc91f0d.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css">
+<style>
+@import url("https://rsms.me/inter/inter.css");
+.list--unstyled {
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-padding-start:0
+}
+
+.list__list-item {
+    padding-bottom:1.33em
+}
+
+.list__list-item h2 {
+    font-size: 1em;
+    margin:.56em 0 .31em
+}
+
+.list__list-item h3 {
+    display: inline-block;
+    font-size: .833em;
+    margin: 0;
+    margin-right: .75em;
+    position:relative
+}
+
+.list__list-item .type {
+    font-size: .833em;
+    letter-spacing: .1em;
+    text-transform:uppercase
+}
+
+.list__list-item a {
+    border-bottom: 0;
+    text-decoration:underline
+}
+
+.list__list-item a:hover {
+    text-decoration:underline
+}
+
+.list__list-item .date {
+    font-size:.833em
+}
+
+.site-home {
+    margin:0 auto
+}
+
+.site-home .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 2.0736em;
+    position:relative
+}
+
+.site-home .about .bio {
+    max-width: 585px;
+    padding-top:1em
+}
+
+.site-home .about p {
+    padding:0 5.805em 1em 0
+}
+
+.site-home .about p a {
+    border-bottom:1px solid
+}
+
+.site-home .about .shapes .shapes--left {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    width:30%
+}
+
+.site-home .about .shapes .shapes--right {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width:20%
+}
+
+.contact {
+    padding-top: 1.728em;
+    position:relative
+}
+
+.contact .social-links {
+    position: absolute;
+    left:0
+}
+
+.contact a {
+    border-bottom: 0;
+    color: #000;
+    font-size: 1.728em;
+    margin-right: 1.2em;
+    padding-bottom:0
+}
+
+.contact a i {
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition:transform .2s, -webkit-transform .2s
+}
+
+.contact a:hover i {
+    -webkit-transform: translateY(-10px);
+    transform:translateY(-10px)
+}
+
+.egg {
+    border: 1px solid #000;
+    border-bottom: 0;
+    border-right: 0;
+    border-top-left-radius: 5px;
+    font-size: 1em;
+    padding: 7px 15px;
+    position: absolute;
+    right: 0;
+    bottom:0
+}
+
+.egg .btn-no-outline:hover {
+    border-bottom:0
+}
+
+article header > h2 {
+    font-size: 1em;
+    font-weight:700
+}
+
+article:after {
+    clear: both;
+    content: "";
+    display:block
+}
+
+@media screen and (max-width: 530px) {
+    .site-home .about {
+        margin-bottom:1.728em
+    }
+
+    .site-home .about .bio {
+        max-width: none;
+        padding:1.728em
+    }
+
+    .site-home .about p {
+        padding:0
+    }
+
+    .site-home .about .shapes {
+        display:none
+    }
+
+    .contact {
+        margin-left:1.728em
+    }
+
+    .egg {
+        display:none
+    }
+}
+
+.error {
+    text-align:center
+}
+
+.error span {
+    display:block
+}
+
+.error span.header__emoji {
+    font-size:2.4888em
+}
+
+.error__notes {
+    text-align:center
+}
+
+.error__notes a {
+    border-bottom:1px solid
+}
+
+.error__notes--desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content:space-between
+}
+
+.error__notes--desktop div {
+    width: 50%;
+    padding:0 2.074em
+}
+
+#pong {
+    width: 400px;
+    height:600px
+}
+
+.error__notes--mobile {
+    display: none;
+    text-align:center
+}
+
+@media screen and (max-width: 530px) {
+    .error__notes--mobile {
+        display:block
+    }
+
+    .error__notes--desktop {
+        display:none
+    }
+
+    #pong {
+        width: 0;
+        height:0
+    }
+
+    #pong canvas {
+        width: 0;
+        height:0
+    }
+}
+
+html {
+    background-size: 100%;
+    font-size:15px
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+}
+
+body {
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    letter-spacing: .03em;
+    line-height: 1.5;
+    margin: 5px;
+    margin-top: 75px;
+    text-rendering:optimizeLegibility
+}
+
+.site > section {
+    -webkit-animation-delay: .25s;
+    animation-delay:.25s
+}
+
+.site main {
+    -webkit-animation-delay: .25s;
+    animation-delay:.25s
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    padding:1.2em
+}
+
+a {
+    color: #83558a;
+    text-decoration:none
+}
+
+a:hover {
+    -webkit-transition: all 0.3s ease-out;
+    transition:all 0.3s ease-out
+}
+
+p {
+    line-height:1.728em
+}
+
+h1, h2, h3, h4 {
+    font-weight: inherit;
+    line-height:1.5
+}
+
+h1 {
+    margin-top: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 2.074em;
+    font-weight:700
+}
+
+h2 {
+    font-size:1.728em
+}
+
+h3 {
+    font-size:1.44em
+}
+
+h4 {
+    font-size:1.2em
+}
+
+small {
+    font-size:.833em
+}
+
+button, .btn {
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1em;
+    padding:7px 15px
+}
+
+button:hover, .btn:hover {
+    cursor:pointer
+}
+
+.btn-no-outline {
+    border: 0;
+    border-radius: 0;
+    padding:0
+}
+
+.btn-no-outline:hover {
+    border-bottom:1px solid
+}
+
+.btn-large {
+    font-size:1.728em
+}
+
+form .form-item .field-label {
+    display: block;
+    font-size: .833em;
+    margin-bottom:5px
+}
+
+form .form-item .field-input {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #fff;
+    font-size: .833em;
+    font-color: #000;
+    font-family: "Inter var", sans-serif;
+    padding:15px
+}
+
+form .form-item .btn-form {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    font-size: .833em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    padding: 15px 20px;
+    text-transform:uppercase
+}
+
+form input::-webkit-input-placeholder {
+    color:#000
+}
+
+form input:-ms-input-placeholder {
+    color:#000
+}
+
+form input::-ms-input-placeholder {
+    color:#000
+}
+
+form input::placeholder {
+    color:#000
+}
+
+* :focus {
+    outline:none
+}
+
+@media screen and (max-width: 530px) {
+    body {
+        margin-top:0
+    }
+
+    h1 {
+        font-size:1.728em
+    }
+
+    h2 {
+        font-size: 1.44em
+    }
+}
+</style>
+</head><body><div class="wrapper"><div class="site site-home"><section><div class="shapes"><center><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/202106_Transverse_section_of_peripheral_nerve.svg" alt="Transverse section of peripheral nerve" width="256" height="256" class="shapes--left"></center></div><div class="about"><div class="bio"> <h1><center>Group 7 - Nerve Regeneration</center></h1><h2><center>Allison MacMartin, Tyler Naus, and Yousra Zouani</center></h2><hr>
+<div class="contact"><div class="social-links"><p>View user needs poster <a href="" target="_blank"><i class="far fa-file"></i></p><br></a></div></div></div>
+</section><br><hr>
+<p style=" text-align: justify"><b>Neuroma</b><br><br>
+Neuroma formation occurs because of nerve injury followed by improper intrinsic nerve repair. It is especially common in amputees where no distal target exists for the regenerating nerve end. In some cases the neuroma causes pain, and is then referred to as symptomatic neuroma. 
+<br><br>
+Neuromas are benign tumors of the nervous system, and often arise post-trauma, including amputation and elective surgery. The neuroma develops as an injured nerve starts to regenerate in an uncontrolled way, resulting in a lump or unorganized axon fibers and non-neural tissue growth. The exact mechanism is unknown, yet neuroma is understood to result from misdirected Schwann cell processes causing pathophysiologic axonal outgrowth.<br><br>
+Morphology of nerve at various stages of neuroma development:<br><br>
+1. Normal nerve<br>
+2. Degenerating axons<br>
+3. Axonal sprouts<br>
+4. Unorganized bundles of axons<br>
+5. Unorganized axon growth into muscle tissue 5. unorganized growth into fibrotic tissue (neuroma).
+<br><hr>
+<b>Current Treatment</b>
+<br><br>
+Diagnosis is mainly clinical, and treatment is most often surgical excision. Yet, surgical excision alone does not address the potential of neuroma to re-form.<br><br>
+Recently, Axogen, Inc. received FDA approval for a porcine small intestine submucosa-based nerve cap to prevent/reduce neuroma. For example, in amputees; following surgical resection of the current neuroma, the nerve stump would be capped to isolate the regenerating cells and attempt to “exhaust” their growth.<br><br>
+<iframe width="300" height="300" src="https://www.youtube.com/embed/XbhCuPTnrGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><hr>
+<b>User Need Statement</b><br><br>
+Design a biocompatible, implantable device to reduce or prevent neuroma formation in persons with a peripheral nerve injury.
+<br><br><hr>
+Wayne State University College of Engineering - Biomedical Engineering
+<br><br>April 2022
+</p>
+</div></body></html>
