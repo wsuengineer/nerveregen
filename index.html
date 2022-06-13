@@ -1,80 +1,163 @@
 <!DOCTYPE html><html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width" initial-scale="1">
-<meta name="description" content="Nerve Regeneration">
-<title>BME 3920 User Needs Final Presentation</title>
-<link rel="stylesheet" href="/main.css"> 
-<script src="https://kit.fontawesome.com/b00cc91f0d.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
+<meta name="description" content="Capstone Design">
+<title>BME 4910 Capstone Design</title>
 <style>
-body   {
+body       {
   margin: auto;
-  padding: 15px;
+  padding: 12px;
+  max-width: 2500px;
   background-color: #ffffff;
   color: #000000;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-align: left;
   } 
-a      {
-  color: #000000;
-  text-decoration: none;
-  }
-h2, h3 {
+h2, h3, h4 {
   font-weight: normal
   }
-div.a  {
-  text-indent: 45px;
+td         {
+  border: 2px solid black;
   }
-div.b {
-  text-indent: 45px;
+hr         {
+  border: 1px solid black;
   }
-div.c {
-  text-indent: 45px;
+div.a      {
+  text-align: center;
   }
-div.d {
-  text-indent: none;
+div.b      {
+  text-indent: 40px;
+  }
+div.c      {
+  text-align: center;
+  }
+div.d      {
+  text-indent: 40px;
+  }
+div.e      {
+  display: grid;
+  height: 100%;
+  text-align: center;
+  }
+.center-fit {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+  }
+div.f      {
+  text-indent: 40px;
+  }
+div.g      {
+  text-align: center;
   }
   </style>
   </head>
-  <body>
-  <center><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/202106_Transverse_section_of_peripheral_nerve.svg" alt="Transverse section of peripheral nerve" width="308" height="308"></center>
-<h1 style = ""><center>Group 7<br>Nerve Regeneration</center></h2>
-        <h3><center>Allison MacMartin, Tyler Naus, & Yousra Zouani</center></h1>
-        <hr>
-        <h3><center><a href="poster.pdf" target="_blank"><i class="fas fa-file fa-lg"></i>&nbsp <u>User Needs Poster</u></a></center></h3>
-        <hr>
-        <h3>Neuroma</h3>
-        <div class = "a">
-            Neuromas are benign tumors of the nervous system and often arise post-trauma, including amputation and elective surgery. A neuroma develops as an injured nerve starts to regenerate in an uncontrolled way, resulting in a lump of entangled axon fibers and non-neural tissue growth. Neuroma is understood to result from misdirected Schwann cell processes causing pathophysiologic axonal outgrowth as the cells try to reinstate axonal continuity of the disrupted nerve end.
-         <p>Neuroma formation occurs because of severe nerve injury (e.g., neurotmesis; axons, Schwann cells, and endoneurium are completely disrupted) followed by improper intrinsic nerve repair. It is especially common in amputees as no distal target exists for the regenerating axons. In some cases the neuroma causes pain and is referred to as symptomatic neuroma. Symptomatic neuroma may cause numerous effects such as making it difficult to mold a well-fitting prosthesis socket or preventing the successful use of a prosthetic, and brings about a clinical need to prevent painful neuroma formation.
-         <p>Morphology of nerve at various stages of neuroma development:
-         <br><br>1. Normal nerve
-             <br>2. Degenerating axons
-             <br>3. Axonal sprouts
-             <br>4. Unorganized bundles of axons
-             <br>5. Unorganized axon growth into muscle tissue 
-             <br>6. Unorganized growth into fibrotic tissue (neuroma)
-        </div>
-        <hr>
-        <h3>Current Treatment</h3>
-        <div class = "b">
-             Diagnosis is mainly clinical, and treatment is most often surgical excision. Yet, surgical excision alone does not address the potential of neuroma to re-form.
-          <p>In 2017, Axogen, Inc. received FDA approval for a porcine small intestine submucosa-based nerve cap to prevent/reduce neuroma. Following surgical resection of the current neuroma, the nerve stump is capped to isolate the regenerating cells from surrounding tissue.
-          <br><br><iframe width="296" height="296" src="https://www.youtube.com/embed/XbhCuPTnrGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>A few areas for future research include material (i.e., address risk of xenograft rejection), intraluminal guidance structures to direct axonal outgrowth, and molecular therapy.
-        </div>
-        <hr>
-        <h3>User Need Statement</h3>
-        <div class = "c">
-             Design a biocompatible, implantable device to reduce neuroma formation in persons with peripheral nerve injury or neuroma.  
-        </div>
-        <br>
-        <hr>
-        <div class = "d">
-        <center>Wayne State University - Biomedical Engineering
-        <br>April 2022</center>
-        </div>     
+<body>
+  <div class = "a">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/202106_Transverse_section_of_peripheral_nerve.svg" alt="Transverse section of peripheral nerve" width="100%" height="100%">
+    <h1>Nerve Regeneration</h1>
+    <h2>Neuroma reduction</h2>
+    <h3>Allison MacMartin, Tyler Naus, & Yousra Zouani</h3>
+    <h3>BME Capstone Design 2022</h3>
+  </div>
+  <hr>
+  <h3><b>Introduction</b></h3>
+  <div class = "b">
+    <p>Symptomatic neuroma is a painful sequela of traumatic or oncologic nerve amputations. Our goal is to reduce/prevent neuroma by isolating transected nerve stumps within protective "caps" during surgery.</p>
+    <p>Neuromas are benign tumors of the peripheral nervous system and can manifest following nerve injury, but especially amputation. A neuroma forms as an injured nerve end starts to regenerate in a disorganized way, resulting in a lump of entangled axon fibers and non-neural tissue growth. Neuroma is understood to occur from misdirected Schwann cell processes in the absence of a distal target — causing pathophysiologic axon outgrowth as the nerve cells try to reinstate continuity.</p>
+    <p>Aside from affecting quality of life, symptomatic neuroma can make molding a well-fitting prosthesis socket difficult, and/or prevent its successful use.</p>
+    <p>Neuroma formation phases:
+      <br>1. Injured nerve end/degenerating axons
+      <br>2. Axonal sprouts
+      <br>3. Unorganized bundles of axons
+      <br>4. Growth into muscle tissue
+      <br>5. Growth into fibrous tissue (neuroma)</p>
+    <p>Current treatment for painful neuroma includes prescription drugs (does not address undelying issue), and most commonly surgical removal. The standard or care for surgical management of stump neuroma is traction neurectomy. During this technique, a neurolysis is performed and the nerve is exposed. Then the nerve is put under traction and transected to healthy nerve. Yet, traction neurectomy alone cannot prevent neuroma from re-forming as the nerve end regenerates.</p>
+  </div>
+    <hr>
+    <h3><b>User Needs and Design Inputs</b></h3>
+    <p><i>User need statement: Design a biocompatible implant device to reduce neuroma formation in persons with peripheral nerve injury or neuroma.</i></p>
+  <div class = "c">
+    <center><table>
+               <tr>
+                 <th>User Need</th>
+               </tr>
+               <tr>
+                 <td>Biocompatibility</td>
+               </tr>
+               <tr>
+                 <td>Cytotoxicity</td>
+               </tr>
+               <tr>
+                 <td>Different sizes</td>
+               </tr>
+               <tr>
+                 <td>Durable</td>
+               </tr>
+               <tr>
+                 <td>Ease of implementation in the clinic</td>
+               </tr>
+               <tr>
+                 <td>Low-cost</td>
+               </tr>
+               <tr>
+                 <td>Reduce pain/neuroma</td>
+               </tr>
+               <tr>
+                 <td>Sterilization</td>
+               </tr>
+              </table></center>
+  </div>
+  <div class = "d">
+    <p><b>Biocompatabilty</b>: Device needs to produce the appropriate host response for the given body contact and duration conditions: permanent contact: implant device.</p>
+    <p><b>Cytotoxicity</b>: Device material(s) cannot cause significant cell damage or death as measured by a cytotoxicity assay (the FDA requires implant devices to undergo cytotoxicity testing at 37C for 72 hr.).</p>
+    <p><b>Different sizes</b>: Device sizes of 3 mm and 5 mm diameter to fit the range of nerve diameters for the wrist/dorsum base of the hand.</p>
+    <p><b>Durable</b>: Cannot mechanically fail (e.g., tear) during and after implantation.</p>
+    <p><b>Ease of implementation in the clinic</b>: Storage life of at least 32 months. Does not require custom or specific surgical instruments for implantation.</p>
+    <p><b>Low-cost</b>: Cost per unit less than 20,000 USD.</p>
+    <p><b>Reduce pain/neuroma</b>: Eliminate axonal outgrowth into muscle or fibrous tissue. Reduce pain (100 mm visual analog scale reading of 0 to 4 mm [no pain] or 5 to 44 mm [mild pain]).</p>
+    <p><b>Sterilization</b>Device must meet the appropriate Sterility Assurance Level.</p>
+    <p><b>Immediately after traction neurectomy is done, our device is intended to cap the nerve end to isolate subsequent regeneration from surrounding tissue to reduce/prevent neuroma. We are focusing on neuroma of the wrist and dorsum base of the hand, as this region is where neuroma is most often observed in the upper limbs.<b></p>
+  </div>
+    <hr>
+    <h3><b>Design Concept</b></h3>
+  <div class = "e">
+    <figure>
+             <img class = "center-fit" src = "cap1.png" alt = "CAD model">
+             <figcaption>Fig. 1. Nerve cap CAD model; isometric projection.</figcaption>
+            </figure>
+          <br>
+    <figure>
+             <img class = "center-fit" src = "cap3.png" alt = "CAD model">
+             <figcaption>Fig. 2. Nerve cap cross-sectional view to reveal partition. Gray color indicates the portion of the cap which may fit over and bond to the nerve via photochemical tissue bonding (PTB).</figcaption>
+            </figure>
+          <br>
+    <figure>
+             <img class = "center-fit" src = "nerveassembly.png" alt = "CAD model">
+             <figcaption>Fig. 3. Nerve cap and proximal nerve assembly.</figcaption>
+            </figure>
+          <br>
+    <figure>
+             <img class = "center-fit" src = "crosssection.png" alt = "CAD model">
+             <figcaption>Fig. 4. Assembly cross-sectional view revealing the regenerating axons isolated within the cap.</figcaption>
+            </figure>
+          <br>
+    <figure>
+             <img class = "center-fit" src = "sideview.png" alt = "CAD model">
+             <figcaption>Fig. 5. Side view. </figcaption>
+            </figure>
+  </div>
+  <div class = "f">
+    <p>Design deatils:</p>
+    <br>- Collagen material. Integrates with surrounding tissue to provide a protective layer. Prevents adhesions to the surrounding soft tissue bed.
+    <br>- Parabolic design to decrease device's occupied volume.
+    <br>- Total length of 10 mm; 5 mm of "runway" to exhaust nerve growth (the runway length is based on several studies that showed minimal axon infiltration past 5 mm in hollow tubes).
+    <br>- Partition (4 mm in length) divides regeneraring axons in two; limits entanglement.
+    <br>- Cap thickness is at least 0.25 mm (based on average nerve guide conduit thickness).
+    <br>- Cap is fixed to the nerve stump via photochemical tissue bonding (PTB) technique. PTB has been used effectively in other nerve repair models, and is advantageous in being atraumatic compared to medical suture.
+    </div>
+    <hr>
+    <div class = "g">
+      <img class = "center-fit" src = "wsu.png" alt = "Wayne State University College of Engineering">
+    </div>
     </body>
-</html>
-</body>
-</html>
+  </html>
