@@ -1,6 +1,6 @@
 <!DOCTYPE html><html>
 <meta name="description" content="Capstone Design">
-<title>BME 4910 Capstone Design</title>
+<title>BME 4910/20 Capstone Design</title>
 <style>
 body       {
   margin: auto;
@@ -8,22 +8,22 @@ body       {
   max-width: 2000px;
   background-color: #ffffff;
   color: #000000;
-  font-family: 'Iowan Old Style', serif;
-  font-size: 18px;
+  font-family: 'Athelas', serif;
+  font-size: 20px;
   text-align: left;
-  }
-th         {
-  font-size: 18px;
   }
 td         {
   border: 2px solid black;
-  font-size: 18px;
   }
 hr         {
-  border: 1px solid black;
+  border: 2px solid black;
   }
 div.a      {
   text-align: center;
+  }
+.header    {
+  width: 90%;
+  height: auto;
   }
 div.b      {
   text-indent: 40px;
@@ -44,8 +44,7 @@ div.e      {
   }
 .center-fit {
   max-width: 100%;
-  max-height: 100vh;
-  margin: auto;
+  height: auto;
   }
 div.f      {
   text-indent: 40px;
@@ -57,11 +56,10 @@ div.g      {
   </head>
 <body>
   <div class = "a">
-  <img class = "center-fit" src="https://upload.wikimedia.org/wikipedia/commons/9/99/202106_Transverse_section_of_peripheral_nerve.svg" alt="Peripheral nerve">
+  <img class = "header" src="https://upload.wikimedia.org/wikipedia/commons/9/99/202106_Transverse_section_of_peripheral_nerve.svg" alt="Peripheral nerve">
     <h1>Nerve Regeneration: Neuroma Reduction</h1>
     <h2>Allison MacMartin, Tyler Naus, & Yousra Zouani
     <br>BME Capstone Design—Spring/Summer 2022</h2>
-    <br>
   </div>
   <hr>
   <h2>Introduction</h2>
@@ -76,7 +74,6 @@ div.g      {
       <br>4. Growth into muscle tissue
       <br>5. Growth into fibrous tissue (neuroma)</p>
     <p>Current treatment for painful neuroma includes prescription drugs, and more commonly surgical removal. The standard or care for surgical management of stump neuroma is traction neurectomy. During this technique, a neurolysis is performed and the nerve is exposed. Then the nerve is put under traction and transected to healthy nerve. Yet, traction neurectomy alone cannot prevent neuroma from re-forming as the nerve end regenerates.</p>
-  <br>
   </div>
     <hr>
   <h2>User Needs and Design Inputs</h2>
@@ -125,19 +122,18 @@ div.g      {
     <p><b>Sterilization</b>: Device must meet the appropriate Sterility Assurance Level.</p>
     --
     <p>Immediately after traction neurectomy, our device is implanted to cap the nerve end to isolate subsequent regeneration from surrounding tissue to reduce/prevent neuroma. We are focusing on neuroma of the wrist and dorsum base of the hand, as this region is where neuroma is most often observed in the upper limb.</p>
-  <br>
   </div>
     <hr>
     <h2>Design Concept</h2>
   <div class = "e">
     <figure>
              <img class = "center-fit" src = "cap1.png" alt = "CAD model">
-             <figcaption>Fig. 1. Nerve cap CAD model; isometric projection.</figcaption>
+             <figcaption>Fig. 1. Nerve cap CAD model.</figcaption>
             </figure>
           <br>
     <figure>
              <img class = "center-fit" src = "cap3.png" alt = "CAD model">
-             <figcaption>Fig. 2. Nerve cap cross-sectional view to reveal partition. Gray color indicates the portion of the cap which may fit over and bond to the nerve via photochemical tissue bonding.</figcaption>
+             <figcaption>Fig. 2. Cross-section view revealing the partition. Gray color indicates the portion of the cap which may fit over and bond to the nerve via photochemical tissue bonding.</figcaption>
             </figure>
           <br>
     <figure>
@@ -147,7 +143,7 @@ div.g      {
           <br>
     <figure>
              <img class = "center-fit" src = "crosssection.png" alt = "CAD model">
-             <figcaption>Fig. 4. Assembly cross-sectional view revealing the regenerating axons isolated within the cap.</figcaption>
+             <figcaption>Fig. 4. Cross-section view revealing the regenerating axons (not to scale) within the cap.</figcaption>
             </figure>
           <br>
     <figure>
@@ -156,14 +152,13 @@ div.g      {
             </figure>
   </div>
   <div class = "f">
-    <h2>Design Details</h2>
+    <p><b>Design Details</b><p>
     <p>- Collagen material. Integrates with surrounding tissue to provide a protective layer. Prevents adhesions to the surrounding soft tissue bed.</p>
     <p>- Parabolic design to decrease device's occupied volume.
     <p>- Total length of 10 mm; 5 mm of "runway" to exhaust nerve growth (the runway length is based on several studies that showed minimal axon infiltration past 5 mm in hollow tubes).
-    <p>- Partition (4 mm in length) divides regeneraring axons in two; limits entanglement.
-    <p>- Cap thickness is at least 0.25 mm (based on average nerve guide conduit thickness).
+    <p>- Partition (4 mm in length) divides regeneraring axons into parts, limits entanglement.
+    <p>- Cap thickness is at least 0.25 mm (based on nerve guide conduit thicknesses).
     <p>- Cap is fixed to the nerve stump via photochemical tissue bonding (PTB) technique. PTB has been used effectively in other nerve repair models, and is advantageous in being atraumatic compared to medical suture.</p>
-    <br>  
   </div>
     <hr>
     <div class = "g">
