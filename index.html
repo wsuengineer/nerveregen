@@ -6,12 +6,13 @@
   @-ms-viewport{ width: device-width; }
 body       {
   margin: auto;
-  padding: 12px;
-  max-width: 2000px;
+  padding: 20px;
+  max-width: 1200px;
   background-color: #ffffff;
   color: #000000;
   font-family: 'Athelas', serif;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
   text-align: justify;
   }
 a:link     {
@@ -34,16 +35,16 @@ div.a      {
   max-height: 900px;
   }
 div.b      {
-  text-indent: 45px;
+  text-indent: 40px;
   }
 div.bc     {
-  text-indent: 45px;
+  text-indent: 40px;
   }
 div.c      {
   text-align: center;
   }
 div.d      {
-  text-indent: 45px;
+  text-indent: 40px;
   }
 div.e      {
   display: grid;
@@ -55,7 +56,7 @@ div.e      {
   height: auto;
   }
 div.f      {
-  text-indent: 45px;
+  text-indent: 40px;
   }
 div.g      {
   text-align: center;
@@ -130,7 +131,7 @@ div.g      {
   <div class = "d">
     <p><b>Biocompatabilty:</b> Device needs to produce the appropriate host response for the given body contact and duration conditions: permanent contact: implant device (must pass ISO 10993-1 defined tests for cytotoxicity, irritation, and sensitization).<br><br>Source: <a href="https://www.fda.gov/media/85865/download" target="_blank" rel="noopener noreferrer">FDA guidance on ISO 10993-1</a></p>
     <p><b>Cytotoxicity:</b> Device material(s) cannot cause significant cell damage or death as measured by a cytotoxicity assay (FDA requires implant devices to undergo cytotoxicity testing at 37&#8451 for 72 hours).</p>
-    <p><b>Different sizes:</b> Device sizes of 3 mm and 5 mm diameter to fit the range of nerve diameters for the wrist/dorsum base of the hand (cadaveric study findings on nerve diameter in the hand/wrist were used to determine the sizes needed).<br><br>Source: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6467622/" target="_blank" rel="noopener noreferrer">Nerve Diameter in the Hand: A Cadaveric Study</a></p>
+    <p><b>Different sizes:</b> Device sizes of 3, 4, 5, and 6 mm diameter to fit the range of nerve diameters for the wrist/dorsum base of the hand (cadaveric study findings on nerve diameter in the hand/wrist were used to determine the sizes needed).<br><br>Source: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6467622/" target="_blank" rel="noopener noreferrer">Nerve Diameter in the Hand: A Cadaveric Study</a></p>
     <p><b>Durable:</b> Degradation at predictable rate, support encapsultation of nerve stump for at least 40 weeks (40 weeks is an estimate; still looking for source).</p>
     <p><b>Ease of implementation in the clinic:</b> Storage life of at least 32 months. Does not require custom or specific surgical instruments for implantation (used shelf-life study of a bioprosthetic heart valve to estimate a reasonable storage life).<br><br>Source: <a href="https://pubmed.ncbi.nlm.nih.gov/9134160/" target="_blank" rel="noopener noreferrer">Shelf-life of bioprosthetic heart valves: a structural and mechanical study</a></p>
     <p><b>Low-cost:</b> Cost per unit less than 20,000 USD.</p>
@@ -138,7 +139,7 @@ div.g      {
     <p><b>Sterilization:</b> Device must meet the appropriate Sterility Assurance Level.</p>
   </div>
     <hr>
-    <h2>Design Concept</h2>
+    <h2>First Design</h2>
   <div class = "e">
     <figure>
              <img class = "center-fit" src = "cap1.png" alt = "CAD model">
@@ -155,22 +156,35 @@ div.g      {
              <figcaption>Fig. 3. Nerve cap and proximal nerve assembly.</figcaption>
             </figure>
           <br>
+    <h2>Revised Design</h2>
     <figure>
-             <img class = "center-fit" src = "crosssection.png" alt = "CAD model">
-             <figcaption>Fig. 4. Cross-section view revealing the regenerating axons (not to scale) within the cap.</figcaption>
+             <img class = "center-fit" src = "c2.png" alt = "CAD model">
+             <figcaption>Fig. 4. Revised design using aligned nanofibers in lieu of internal architecture. Gray color indicates the portion of the cap which may fit over and bond to the nerve via photochemical tissue bonding (PTB).</figcaption>
             </figure>
           <br>
     <figure>
-             <img class = "center-fit" src = "sideview.png" alt = "CAD model">
-             <figcaption>Fig. 5. Side view.</figcaption>
+             <img class = "center-fit" src = "c2cross.png" alt = "CAD model">
+             <figcaption>Fig. 5. Cross-section view.</figcaption>
             </figure>
   </div>
   <div class = "f">
+    <p><b>Design overview</b>:
+    <br>
+    <br>-	Material is decellularized, GLU-treated bovine/porcine pericardium. Will vascularize and integrate with surrounding tissue to form a protective layer—as opposed to degrading.
+<br>-	Relatively easy fabrication process. Tube (Fig. 1) is molded into form given in Fig. 2 using PTB technique.
+<br>-	Distal end is flattened to permit suture to anchor device in tissue.
+<br>-	Nerve cap bonds to proximal nerve end via PTB. Cap clearance fits over the nerve, luminal surface is cross-linked with the collagenous epineurial surface.
+<br>-	PTB gives a strong seal, cap provides internal environment for regenerating nerve end isolated from external mechanical stimuli and neurotrophic signaling, prevent nerve end neuroma.
+<br>-	Aligned nanofibers at the start of the gap ensure axons grow outward. 
+<br>-	Cap provides for 5-6 mm of “runway” to exhaust nerve regeneration.
+<br>-	Cap sizes of 3, 4, 5, and 6 mm.</p>
     <p>Once the nerve is surgically transected, the nerve cap is implanted to cap the nerve end in order to isolate subsequent regeneration from surrounding tissue to reduce/prevent neuroma. The device is designed for nerves of the wrist and dorsum base of the hand, as this region is <a href="https://meeting.handsurgery.org/abstracts/2020/HSEP140.cgi" target="_blank" rel="noopener noreferrer">where neuroma is most often observed in the upper limb.</a></p>
-    <p>The nerve cap is one part and is comprised of collagen/PLA composite material. The nerve stump diameter is measured to determine the appropriate cap size. The cap fits (with clearance) over the nerve with an overlap up to 5 mm as indicated by the gray area in Fig. 3. The luminal collagen surface will bind to the nerve tissue via PTB technique. In this respect, the cap is fully constrained to the nerve stump. The regenerating nerve cells are limited to the space within the cap. This “runway” space is 5 mm in length (so that the total cap length is 10 mm). As the cross-sectional area of the cap decreases along the runway, a 4 mm partition divides the inner volume of the cap into two parts. The partition serves two purposes; it helps guide axons to reduce dispersion, and it provides an internal architecture to support the distal end of the cap.</p>
-    <p>In theory, the cap provides a protective layer from mechanical stimuli and neurotrophic signaling, and prevents the regenerating nerve end from growing into muscle or fibrous tissue. It also prevents adhesions to the surrounding soft tissue bed. Over time, collagen/PLA will degrade after the regenerating nerve has exhausted itself.</p>
-    <p>The 5 mm length constituting the PTB surface area was determined from the overlapping length of nerve guide conduits which were sutured to the nerve. PTB has been <a href="https://www.journalofsurgicalresearch.com/article/S0022-4804(07)00037-6/fulltext" target="_blank" rel="noopener noreferrer">successfully demonstrated in numerous tissue repair models</a> and is advantageous when compared to medical suture in that PTB is atraumatic. The 5 mm “runway” is based on <a href="https://www.americanjournalofsurgery.com/article/S0002-9610(06)00519-8/fulltext" target="_blank" rel="noopener noreferrer">a study</a> which found minimal axon infiltration past 5 mm in hollow tubes. The cap thickness is at minimum 0.25 mm—<a href="https://www.sciencedirect.com/science/article/pii/S0142961215000721" target="_blank" rel="noopener noreferrer">based on a nerve guide conduit</a> of similar material.</p>
-    <p><mark>We are currently revising our cap design in favor of a multi-tubular insert to give a device that is truly unique from other nerve caps on the market. Compared to the partition, we hypothesize the tubes will provide a more robust internal architecture and more effectively increase axon alignment/reduce entanglement.</mark></p>
+    <p>The nerve cap is one part and is comprised of decellularize GLU-treated bovine/porcine pericardium (same as used in bioprosthetic heart valves). The nerve stump diameter is measured to determine the appropriate cap size. The cap fits (with clearance) over the nerve with an overlap up to 5 mm as indicated by the gray area in Fig. 3. The luminal surface will bind to the collagenous epineurium via PTB technique. In this respect, the cap is fully constrained to the nerve stump. The regenerating nerve cells are limited to the space within the cap. This “runway” space is 5-6 mm in length (so that the total cap length is 12 mm). Aligned nanofibers at the beginning of the gap direct axon outgrowth along the length of the cap.</p>
+    <p>In theory, the cap provides a protective layer from mechanical stimuli and neurotrophic signaling, and prevents the regenerating nerve end from growing into muscle or fibrous tissue. It also prevents adhesions to the surrounding soft tissue bed. Over time, pericardium will integrate with surrounding tissue.</p>
+    <p>The 5-6 mm length constituting the PTB surface area was determined from the overlapping length of nerve guide conduits which were sutured to the nerve. PTB has been <a href="https://www.journalofsurgicalresearch.com/article/S0022-4804(07)00037-6/fulltext" target="_blank" rel="noopener noreferrer">successfully demonstrated in numerous tissue repair models</a> and is advantageous when compared to medical suture in that PTB is atraumatic. The 5 mm “runway” is based on <a href="https://www.americanjournalofsurgery.com/article/S0002-9610(06)00519-8/fulltext" target="_blank" rel="noopener noreferrer">a study</a> which found minimal axon infiltration past 5 mm in hollow tubes. The cap thickness is about 0.375 mm—<a href="https://www.sciencedirect.com/science/article/pii/S0142961215000721" target="_blank" rel="noopener noreferrer">based on a nerve guide conduit</a>.</p>
+    <p><b>Photochemical Tissue Bonding Technique</b>:</p>
+    <p>In designing our nerve cap, our goal was to permit for a sutureless procedure in the cap’s proximal attachment to the nerve stump. Photochemical tissue bonding (PTB) is a tissue repair technique that uses light and a photosensitizing dye to crosslink proteins on tissue surfaces. In PTB, a photoactive dye is applied to the tissue surfaces, followed by illumination of the surfaces with visible light. The dye absorbs strongly at the wavelength of the illumination of the tissue interfaces, and the energy of the absorbed photons is used to drive photochemical reactions. Covalent bonds are formed between protein molecules which bind the tissue surfaces together—analogous to welding. In the PTB technique, the photosensitizer used stains the tissue such that effects are limited to the surface. Overall temperature rise is negligible. This technology is generally applicable with collagenous tissues.</p>
+    <p>With our nerve cap, PTB allows for the bovine/porcine pericardium cap material to crosslink with the collagenous epineurial surface of the nerve. The result is a 360 seal which fully constrains the cap, and isolates the regenerating nerve end from external neurotrophic signals. The cap is sutured at the distal end in surrounding tissue.</p>
   </div>
     <hr>
     <div class = "g">
