@@ -1,136 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BME Capstone Design</title>
+    <style>
+      body {
+        max-width: 800px;
+        padding: 18px;
+        background-color: #ffffff;
+        font-size: 15px;
+        color: #000000;
+        text-align: justify;
+        margin: auto;
+        font-family: 'Avenir', -apple-system;
+      }
 
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BME Capstone Design</title>
+      div.a {
+        text-align: center;
+      }
 
-<style>
-body {
-    max-width: 800px;
-    padding: 16px;
-    background-color: #ffffff;
-    font-size: 15px;
-    color: #000000;
-    text-align: justify;
-    margin: auto;
-    font-family: 'Avenir', -apple-system;
-    }
-div.a {
-    text-align: center;
-    }
-.img-container {
-    width: 100%;
-    }
-.box {
-    margin: auto;
-    width: 100%;
-    height: auto;
-    border: 2px solid black;
-    text-align: center;
-    }
-div.b {
-    text-align: left;
-    }
-h1, h2, h3, h4 {
-    text-align: left;
-}
-}
-hr {
-    border: 2px solid black;
-    }
-td {
-    border: 2px solid black;
-    }
-a {
-    color: #0000ff;
-    text-decoration: none;
-    }
-</style>
-</head>
-<body>
-<div class="a">
-<img class="img-container" src="Cap2-assembly.png" alt="">
-</div>
-<h1>Nerve Cap to Reduce Stump Neuroma Recurrence Following Traction Neurectomy</h1>
-<h2>Tyler Naus, Allison MacMartin, & Yousra Zouani</h2>
-<h3>Department of Biomedical Engineering, Wayne State University</h3>
-<h4>Spring/Summer 2022</h4>
-<hr>
-<h2>Design Summary</h2>
-<p>Symptomatic neuroma is a painful sequela of traumatic or oncologic nerve amputations <a href="#ref">[1]</a>. Our goal is to reduce peripheral nerve end neuroma recurrence by isolating transected nerve stumps within protective “caps”.</p>
-<p>Neuromas are benign tumors of the peripheral nervous system. They can manifest following nerve injury or surgery. When nerves are damaged they will naturally regenerate in an attempt to re-establish continuity; a neuroma forms when the axons grow in a disorganized way—resulting in a bulbous mass of entangled axon fibers and non-neural tissue growth <a href="#b">[2]</a>. Neuroma may disrupt normal nerve function and cause chronic pain, in which case it is termed symptomatic. The condition can occur in the middle of nerve or at the nerve end. Our solution focuses on the nerve end, where incidence is high in the absence of a distal target.</p>
-<p>Surgical management of symptomatic stump neuroma includes burying the nerve into adjacent soft tissue or bone and traction neurectomy (excision). Burying the nerve is not always anatomically possible, and, when it is, it requires an additional dissection of otherwise healthy tissue to secure the nerve end. Burial also removes the possibility of sensory recovery. Alternatively, traction neurectomy has a high rate of neuroma recurrence. Research indicates reconstructing the nerve after neuroma excision has the highest success based on postoperative pain data <a href="#b">[3]</a>.</p>
-<p>The solution is a nerve cap that fits over and bonds to the nerve stump following transection of the current neuroma. The medical device is open on one end and closed on the other. Composed of bovine pericardial tissue, it fits over and photo seals to the nerve epineurium. The resultant nerve outgrowth is contained within the cap lumen, isolated from mechanical stimuli and external neurotrophic signaling.</p>
-<p>Currently, two nerve caps are being used in the clinic; the Axoguard Nerve Cap and Polygonics NeuroCap <a href="#b">[4][5]</a>. Both are intended for the surgical management of symptomatic nerve end neuroma. Both of these devices are a different material (porcine small intestinal submucosa and synthetic polymer, respectively) from ours, and are sutured to the nerve instead of photo sealed. Academic research published in March 2022 demonstrated successful use of a photo sealed cap in vivo <a href="b">[6]</a>. The cap experimented with did not permit the nerve stump any gap space—contrary to our design.</p>
-<p>Our solution is as of now theoretical. With a firm understanding of the problem and user needs, consultation with experts in the field, and evidence of successful use of the predicate medical devices, we are confident our design will transfer to production and use in the clinic. The anticipated regulatory pathway for our medical device in the United States is an FDA 510(k) submission.</p>
-<p>In the United States, approximately 185,000 limb amputations occur annually, with incidence of symptomatic neuroma in amputees at 15% <a href="#b">[7][8]</a>. The cause of stump neuroma is not limited to amputation; we estimate the patient population is in the thousands. Our device is intended for use by medical professionals and for sale directly to physicians at a predicted cost of 5000 USD.</p>
+      .img-container {
+        width: 100%;
+      }
+
+      .box {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        border: 2px solid black;
+        text-align: center;
+      }
+
+      .citations {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        border: 2px solid black;
+        text-align: left;
+      }
+
+      #b {}
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        text-align: left;
+      }
+
+      hr {
+        border: 1px solid black;
+      }
+
+      td {
+        border: 2px solid black;
+      }
+
+      a {
+        color: #0000ff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">
+      <img class="img-container" src="Cap2-assembly.png" alt="">
+    </div>
+    <h1>Nerve Cap to Reduce Stump Neuroma Recurrence Following Traction Neurectomy</h1>
+    <h2>Tyler Naus, Allison MacMartin, & Yousra Zouani</h2>
+    <h3>Department of Biomedical Engineering, Wayne State University</h3>
+    <h4>Spring/Summer 2022</h4>
     <hr>
-<h2>Problem Description</h2>
-<img class="img-container" src="nerve.svg" alt="">
-<p>Stump neuroma is a benign tumor located at a peripheral nerve end. Neuromas can develop after blunt or sharp trauma followed by improper intrinsic repair. A critical cause of neuroma formation is the injury of the perineurium; as the perineurium is damaged, it allows for axon escape. As axons get to the extraperineurial space they can regenerate in a disorganized way. This growth can create and transmit signals which the central nervous system may interpret as pain <a href="b">[2]</a>.</p>
+    <h2>Summary</h2>
+    <p>Symptomatic neuroma is a painful sequela of traumatic or oncologic nerve amputations <a href="#ref">[1]</a>. Our goal is to reduce peripheral nerve end neuroma recurrence by isolating transected nerve stumps within protective “caps”. </p>
+    <p>Neuromas are benign tumors of the peripheral nervous system. They can manifest following nerve injury or surgery. When nerves are damaged they will naturally regenerate in an attempt to re-establish continuity; a neuroma forms when the axons grow in a disorganized way—resulting in a bulbous mass of entangled axon fibers and non-neural tissue growth <a href="#b">[2]</a>. Neuroma may disrupt normal nerve function and cause chronic pain, in which case it is termed symptomatic. The condition can occur in the middle of nerve or at the nerve end. Our solution focuses on the nerve end, where incidence is high in the absence of a distal target. </p>
+    <p>Surgical management of symptomatic stump neuroma includes burying the nerve into adjacent soft tissue or bone and traction neurectomy (excision). Burying the nerve is not always anatomically possible, and, when it is, it requires an additional dissection of otherwise healthy tissue to secure the nerve end. Burial also removes the possibility of sensory recovery. Alternatively, traction neurectomy has a high rate of neuroma recurrence. Research indicates reconstructing the nerve after neuroma excision has the highest success based on postoperative pain data <a href="#b">[3]</a>. </p>
+    <p>The solution is a nerve cap that fits over and bonds to the nerve stump following transection of the current neuroma. The medical device is open on one end and closed on the other. Composed of bovine pericardial tissue, it fits over and photo seals to the nerve epineurium. The resultant nerve outgrowth is contained within the cap lumen, isolated from mechanical stimuli and external neurotrophic signaling.</p>
+    <p>Currently, two nerve caps are being used in the clinic; the Axoguard Nerve Cap and Polygonics NeuroCap <a href="#b">[4][5]</a>. Both are intended for the surgical management of symptomatic nerve end neuroma. Both of these devices are a different material (porcine small intestinal submucosa and synthetic polymer, respectively) from ours, and are sutured to the nerve instead of photo sealed. Academic research published in March 2022 demonstrated successful use of a photo sealed cap in vivo <a href="b">[6]</a>. The cap experimented with did not permit the nerve stump any gap space—contrary to our design. </p>
+    <p>Our solution is as of now theoretical. With a firm understanding of the problem and user needs, consultation with experts in the field, and evidence of successful use of the predicate medical devices, we are confident our design will transfer to production and use in the clinic. The anticipated regulatory pathway for our medical device in the United States is an FDA 510(k) submission.</p>
+    <p>In the United States, approximately 185,000 limb amputations occur annually, with incidence of symptomatic neuroma in amputees at 15% <a href="#b">[7][8]</a>. The cause of stump neuroma is not limited to amputation; we estimate the patient population is in the thousands. Our device is intended for use by medical professionals and for sale directly to physicians at a predicted cost of 5000 USD. </p>
+    <hr>
+    <h2>Problem Description</h2>
+    <div class="a">
+      <figure>
+        <img class="img-container" src="nerve.svg" alt="">
+          <figcaption><i>Peripheral Nerve Anatomy</i></figcaption>
+      </figure>
+    </div>
+    <p>Stump neuroma is a benign tumor located at a peripheral nerve end. Neuromas can develop after blunt or sharp trauma followed by improper intrinsic repair. A critical cause of neuroma formation is the injury of the perineurium; as the perineurium is damaged, it allows for axon escape. As axons get to the extraperineurial space they can regenerate in a disorganized way. This growth can create and transmit signals which the central nervous system may interpret as pain <a href="b">[2]</a>. </p>
     <p>Pathophysiology:</p>
-    <p>1. Nerve injury/degenerating axons.<br>2. Axonal sprouts.<br>3. Unorganized bundles of axons.<br>4. Growth into fibrous tissue.</p>
-    <p>A fraction of neuromas cause debilitating pain and/or sensory loss, which is resistant to most pharmacologic analgesic methods <a href="#b">[2]</a>. Surgical management includes muscle/bone transposition—which is not always anatomically possible and removes the opportunity for sensory recovery—and traction neurectomy (excision). Excision alone does not prevent neuroma recurrence <a href="#b">[3]</a>. Our solution is intended to occur with a traction neurectomy to address this problem.</p>
+    <p>1. Nerve injury/degenerating axons. <br>2. Axonal sprouts. <br>3. Unorganized bundles of axons. <br>4. Growth into fibrous tissue. </p>
+    <p>A fraction of neuromas cause debilitating pain and/or sensory loss, which is resistant to most pharmacologic analgesic methods <a href="#b">[2]</a>. Surgical management includes muscle/bone transposition—which is not always anatomically possible and removes the opportunity for sensory recovery—and traction neurectomy (excision). Excision alone does not prevent neuroma recurrence <a href="#b">[3]</a>. Our solution is intended to occur with a traction neurectomy to address this problem. </p>
     <hr>
-<h2>Needs/Inputs</h2>
-<p><b>User need statement:</b> Design and implement a biocompatible medical device to reduce stump neuroma reoccurrence in patients who received a traction neurectomy.</p>
-<center><table>
-<tr><th>User Need</th></tr>
-<tr><td>Biocompatibility</td></tr>
-<tr><td>Cytotoxicity</td></tr>
-<tr><td>Different Sizes</td></tr>
-<tr><td>Durability</td></tr>
-<tr><td>Ease of Use in Clinic</td></tr>
-<tr><td>Low Cost</td></tr>
-<tr><td>Reduce Symptomatic Neuroma</td></tr>
-<tr><td>Sterilization</td></tr>
-</table></center>
-<p><b>Biocompatabilty:</b> Device needs to produce the appropriate host response for the given body contact and duration conditions: permanent contact: implant device (see FDA guidance on ISO 10993-1).</p>
-<p><b>Cytotoxicity:</b> Device material(s) cannot cause significant cell damage or death (i.e., &#62;30%) as measured by a cytotoxicity assay.</p>
-<p><b>Different Sizes:</b> Device diameters of 2, 3, 4, 5, and 6 mm diameter to fit the range of nerve diameters for the wrist/dorsum base of the hand (cadaveric study findings on nerve diameter in the hand/wrist were used to determine the sizes needed) <a href="#b">[9]</a>.</p>
-<p><b>Durability:</b> Vascularizes and integrates with soft tissue; does not degrade.</p>
-<p><b>Ease of Use in Clinic:</b> Storage life of at least two years.<a href="#ref">[10]</a>. Defined surgical technique.</p>
-<p><b>Low Cost:</b> Cost per unit &#60; 5,000 USD.</p>
-<p><b>Reduce Symptomatic Neuroma:</b> Eliminate axonal outgrowth into muscle or fibrous tissue. Overall reduction in pain as measured by a visual analog scale.</p>
-<p><b>Sterilization:</b> Final finished form is sterile; no contaminants/residues.</p>
-<hr>
-<h2>Design</h2>
-<div class="box">
-<details>
-    <summary><b>Rev 0</b></summary>
-<figure>
-<img class="img-container" src="Cap1.png" alt="">
-<figcaption>Nerve Cap</figcaption>
-</figure>
-<figure>
-   <img class="img-container" src="Cap1-cross-section.png" alt="">
-   <figcaption>Longitudinal Section View</figcaption>
-</figure>
-<figure>
-   <img class="img-container" src="Cap1-assembly.png" alt="">
-   <figcaption>Nerve and Nerve Cap Assembly</figcaption>
-</figure>
-</details>
-</div>
-<div class="a">
-<h3>Rev 1 (current)</h3>
-<figure>
-   <img class="img-container" src="Cap2.png" alt="">
-   <figcaption>Nerve Cap</figcaption>
-</figure>
-<figure>
-   <img class="img-container" src="Cap2-cross-section.png" alt="">
-   <figcaption>Longitudinal Section View</figcaption>
-</figure>
-<figure>
-   <img class="img-container" src="cap2-isoassembly.png" alt="">
-   <figcaption>Nerve and Nerve Cap Assembly</figcaption>
-</figure>
-</div>
-    <p><b>Design overview:</b></p>
+    <h2>Needs/Inputs</h2>
+    <p>
+      <b>User need statement:</b> Design and implement a biocompatible medical device to reduce stump neuroma reoccurrence in patients who received a traction neurectomy.
+    </p>
+    <center>
+      <table>
+        <tr>
+          <th>User Need</th>
+        </tr>
+        <tr>
+          <td>Biocompatibility</td>
+        </tr>
+        <tr>
+          <td>Cytotoxicity</td>
+        </tr>
+        <tr>
+          <td>Different Sizes</td>
+        </tr>
+        <tr>
+          <td>Durability</td>
+        </tr>
+        <tr>
+          <td>Ease of Use in Clinic</td>
+        </tr>
+        <tr>
+          <td>Low Cost</td>
+        </tr>
+        <tr>
+          <td>Reduce Symptomatic Neuroma</td>
+        </tr>
+        <tr>
+          <td>Sterilization</td>
+        </tr>
+      </table>
+    </center>
+    <p>
+      <b>Biocompatabilty:</b> Device needs to produce the appropriate host response for the given body contact and duration conditions: permanent contact: implant device (see FDA guidance on ISO 10993-1).
+    </p>
+    <p>
+      <b>Cytotoxicity:</b> Device material(s) cannot cause significant cell damage or death (i.e., &#62;30%) as measured by a cytotoxicity assay.
+    </p>
+    <p>
+      <b>Different Sizes:</b> Device diameters of 2, 3, 4, 5, and 6 mm diameter to fit the range of nerve diameters for the wrist/dorsum base of the hand (cadaveric study findings on nerve diameter in the hand/wrist were used to determine the sizes needed) <a href="#b">[9]</a>.
+    </p>
+    <p>
+      <b>Durability:</b> Vascularizes and integrates with soft tissue; does not degrade.
+    </p>
+    <p>
+      <b>Ease of Use in Clinic:</b> Storage life of at least two years. <a href="#ref">[10]</a>. Defined surgical technique.
+    </p>
+    <p>
+      <b>Low Cost:</b> Cost per unit &#60; 5,000 USD.
+    </p>
+    <p>
+      <b>Reduce Symptomatic Neuroma:</b> Eliminate axonal outgrowth into muscle or fibrous tissue. Overall reduction in pain as measured by a visual analog scale.
+    </p>
+    <p>
+      <b>Sterilization:</b> Final finished form is sterile; no contaminants/residues.
+    </p>
+    <hr>
+    <h2>Design Details</h2>
+    <div class="box">
+      <details>
+        <summary>
+          <b>Rev 0</b>
+        </summary>
+        <figure>
+          <img class="img-container" src="Cap1.png" alt="">
+            <figcaption><i>Nerve Cap</i></figcaption>
+        </figure>
+        <figure>
+          <img class="img-container" src="Cap1-cross-section.png" alt="">
+            <figcaption><i>Longitudinal Section View</i></figcaption>
+        </figure>
+        <figure>
+          <img class="img-container" src="Cap1-assembly.png" alt="">
+            <figcaption><i>Nerve and Nerve Cap Assembly</i></figcaption>
+        </figure>
+      </details>
+    </div>
+    <div class="a">
+      <h3>Rev 1 (current)</h3>
+      <figure>
+        <img class="img-container" src="Cap2.png" alt="">
+          <figcaption><i>Nerve Cap</i></figcaption>
+      </figure>
+      <figure>
+        <img class="img-container" src="Cap2-cross-section.png" alt="">
+          <figcaption><i>Longitudinal Section View</i></figcaption>
+      </figure>
+      <figure>
+        <img class="img-container" src="cap2-isoassembly.png" alt="">
+          <figcaption><i>Nerve and Nerve Cap Assembly</i></figcaption>
+      </figure>
+    </div>
+    <p>
+      <b>Design overview:</b>
+    </p>
     <p>- Material is decellularized bovine pericardial tissue. The tissue is photo-oxidized to crosslink and stabilize the internal collagen structure, eliminate toxic by-products. The material is nonimmunogenic, biocompatible, and non-cytotoxic. It is strong, uniform, and easy to trim and shape. Similar to autologous tissue.</p>
     <p>- Cap inner diameters of 2, 3, 4, 5, and 6 mm to fit the range of nerve diameters in the limbs.</p>
     <p>- Flattened distal end for anchoring to soft tissue.</p>
@@ -140,28 +201,48 @@ a {
     <p>- Ethylene oxide sterilization.</p>
     <p>Our final design is a biocompatible decellularized bovine pericardium cap with minimal permeability to insulate the nerve end from external neurotrophic factors and mechanical stimulation. The flexible cap shall fit over and photochemically bond to the nerve end for 360&#176; seal. Over time, the cap will vascularize and integrate with surrounding soft tissue.</p>
     <p>Traditionally, nerve guide conduit and cap surgeries use suture to fix the device to nerve. Suturing causes trauma to the nerve and may illicit tissue reactivity. Our final design specifies photochemical tissue bonding at the nerve–nerve cap contact surfaces. A photoactive dye, rose bengal, is applied to the tissue surfaces (epineurium and nerve cap luminal surface) followed by illumination of the surfaces with visible light. The dye absorbs strongly at the specified wavelength, and the energy of the absorbed photons drives photochemical reactions to form covalent bonds between protein molecules which bind the surfaces. This process occurs quickly with negligible temperature rise.</p>
-<hr>
+    <hr>
     <h2>Potential Market and Impact</h2>
-    <p>The incidence of neuroma varies in the literature as most neuromas are asymptomatic and consequently go undetected. A study of hand injuries found a rate of 1% after all nerve repair surgeries. Neuroma is the leading cause of pain in amputees, with 185,000 limb amputations per year in the US, and a post-amputation symptomatic neuroma rate of 15% <a href="#b">[7][8]</a>. We estimate that the US market size is in the thousands of patients.</p>
-<p>The estimated selling price is 5000 USD. In accordance with federal law, the device is to be restricted to sale by or on the order of a physician. The device is to sell direct from the manufacturer.</p>
-<hr>
-<center><h2>References</h2></center>
-<div class="b">
-    <p><b>[1]</b> Lewin-Kowalik, J., Marcol, W., Kotulska, K., Mandera, M., & Klimczak, A. (2006). Prevention and management of painful neuroma. Neurologia medico-chirurgica, 46(2), 62–68. https://doi.org/10.2176/nmc.46.62.<br>
-        <br><b>[2]</b> Zabaglo M, Dreyer MA. Neuroma. [Updated 2022 Jan 9]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2022 Jan-.<br>
-        <br><b>[3]</b> Tork, S., Faleris, J., Engemann, A., Deister, C., DeVinney, E., & Valerio, I. L. (2020). Application of a Porcine Small Intestine Submucosa Nerve Cap for Prevention of Neuromas and Associated Pain. Tissue engineering. Part A, 26(9-10), 503–511. https://doi.org/10.1089/ten.TEA.2019.0273.<br>
-        <br><b>[4]</b> Axoguard Nerve Cap. Axogen, Inc. https://www.axogeninc.com/products/axoguard-nerve-cap/.<br>
-        <br><b>[5]</b> NEUROCAP. Polygonics. https://polyganics.com/portfolio/peripheral-nerve-repair/neurocap/.<br>
-        <br><b>[6]</b> Scott, B. B., Wu, R. C., Nietlispach, V., Randolph, M. A., & Redmond, R. W. (2022). A Photosealed Cap Prevents Disorganized Axonal Regeneration and Neuroma following Nerve Transection in Rats. Plastic and reconstructive surgery. Global open, 10(3), e4168. https://doi.org/10.1097/GOX.0000000000004168.<br>
-        <br><b>[7]</b> Wasser, J. G., Vincent, K. R., Herman, D. C., & Vincent, H. K. (2020). Potential lower 	extremity amputation-induced mechanisms of chronic low back pain: role for focused 	resistance exercise. Disability and rehabilitation, 42(25), 3713–3721. https://doi.org/10.1080/09638288.2019.1610507.<br>   
-        <br><b>[8]</b> List, E. B., Krijgh, D. D., Martin, E., & Coert, J. H. (2021). Prevalence of residual limb pain and symptomatic neuromas after lower extremity amputation: a systematic review and 	meta-analysis. Pain, 162(7), 1906–1913.	https://doi.org/10.1097/j.pain.0000000000002202.<br>  
-        <br><b>[9]</b> Ortiz, R., Westenberg, R. F., Langhammer, C. G., Knaus, W. J., Chen, N. C., & Eberlin, K. R. (2019). Nerve Diameter in the Hand: A Cadaveric Study. Plastic and reconstructive surgery. Global open, 7(3), e2155. https://doi.org/10.1097/GOX.0000000000002155.<br>   
-        <br><b>[10]</b> Julien, M., Létouneau, D. R., Marois, Y., Cardou, A., King, M. W., Guidoin, R., Chachra, D., & Lee, J. M. (1997). Shelf-life of bioprosthetic heart valves: a structural and mechanical study. Biomaterials, 18(8), 605–612. https://doi.org/10.1016/s0142-9612(96)00155-x.</p>
-        </div>
-<hr>
-<div class="a">
-<img class="img-container" src="wsu.png">
+    <p>The incidence of neuroma varies in the literature as most neuromas are asymptomatic and consequently go undetected. A study of hand injuries found a rate of 1% after all nerve repair surgeries. Neuroma is the leading cause of pain in amputees, with 185,000 limb amputations per year in the US, and a post-amputation symptomatic neuroma rate of 15% <a href="#b">[7][8]</a>. We estimate that the US market size is in the thousands of patients. </p>
+    <p>The estimated selling price is 5000 USD. In accordance with federal law, the device is to be restricted to sale by or on the order of a physician. The device is to sell direct from the manufacturer.</p>
+    <hr>
+    <div id="b">
+      <h2>
+        <center>References</center>
+      </h2>
     </div>
-<h4>&copy; Tyler Naus, Allison MacMartin, & Yousra Zouani. All Rights Reserved.</h4>
-</body>
+    <div class="citations">
+      <details>
+        <summary>
+          <b>See all</b>
+        </summary>
+        <p>
+          <b>[1]</b> Lewin-Kowalik, J., Marcol, W., Kotulska, K., Mandera, M., & Klimczak, A. (2006). Prevention and management of painful neuroma. Neurologia medico-chirurgica, 46(2), 62–68. https://doi.org/10.2176/nmc.46.62. <br>
+          <br>
+          <b>[2]</b> Zabaglo M, Dreyer MA. Neuroma. [Updated 2022 Jan 9]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2022 Jan-. <br>
+          <br>
+          <b>[3]</b> Tork, S., Faleris, J., Engemann, A., Deister, C., DeVinney, E., & Valerio, I. L. (2020). Application of a Porcine Small Intestine Submucosa Nerve Cap for Prevention of Neuromas and Associated Pain. Tissue engineering. Part A, 26(9-10), 503–511. https://doi.org/10.1089/ten.TEA.2019.0273. <br>
+          <br>
+          <b>[4]</b> Axoguard Nerve Cap. Axogen, Inc. https://www.axogeninc.com/products/axoguard-nerve-cap/. <br>
+          <br>
+          <b>[5]</b> NEUROCAP. Polygonics. https://polyganics.com/portfolio/peripheral-nerve-repair/neurocap/. <br>
+          <br>
+          <b>[6]</b> Scott, B. B., Wu, R. C., Nietlispach, V., Randolph, M. A., & Redmond, R. W. (2022). A Photosealed Cap Prevents Disorganized Axonal Regeneration and Neuroma following Nerve Transection in Rats. Plastic and reconstructive surgery. Global open, 10(3), e4168. https://doi.org/10.1097/GOX.0000000000004168. <br>
+          <br>
+          <b>[7]</b> Wasser, J. G., Vincent, K. R., Herman, D. C., & Vincent, H. K. (2020). Potential lower extremity amputation-induced mechanisms of chronic low back pain: role for focused resistance exercise. Disability and rehabilitation, 42(25), 3713–3721. https://doi.org/10.1080/09638288.2019.1610507. <br>
+          <br>
+          <b>[8]</b> List, E. B., Krijgh, D. D., Martin, E., & Coert, J. H. (2021). Prevalence of residual limb pain and symptomatic neuromas after lower extremity amputation: a systematic review and meta-analysis. Pain, 162(7), 1906–1913. https://doi.org/10.1097/j.pain.0000000000002202. <br>
+          <br>
+          <b>[9]</b> Ortiz, R., Westenberg, R. F., Langhammer, C. G., Knaus, W. J., Chen, N. C., & Eberlin, K. R. (2019). Nerve Diameter in the Hand: A Cadaveric Study. Plastic and reconstructive surgery. Global open, 7(3), e2155. https://doi.org/10.1097/GOX.0000000000002155. <br>
+          <br>
+          <b>[10]</b> Julien, M., Létouneau, D. R., Marois, Y., Cardou, A., King, M. W., Guidoin, R., Chachra, D., & Lee, J. M. (1997). Shelf-life of bioprosthetic heart valves: a structural and mechanical study. Biomaterials, 18(8), 605–612. https://doi.org/10.1016/s0142-9612(96)00155-x.
+        </p>
+      </details>
+    </div>
+    <hr>
+    <div class="a">
+      <img class="img-container" src="wsu.png">
+    </div>
+    <h4>&copy; Tyler Naus, Allison MacMartin, & Yousra Zouani. All Rights Reserved.</h4>
+  </body>
 </html>
